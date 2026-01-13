@@ -6,7 +6,7 @@ This is the official website for the AI Lab at Portland State University, hosted
 
 The website includes the following sections:
 
-- **Home/Hero**: Eye-catching landing section with lab name and tagline
+- **Home**: Landing section with lab name and tagline
 - **About**: Overview of the lab's mission and values
 - **Research**: Showcase of research areas and topics
 - **Goals**: Lab's mission and objectives
