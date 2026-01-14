@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Applied Machine Learning projects at the AI Lab, Portland State University">
+    <title>Applied Machine Learning Projects - AI Lab PSU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html#home">AI Lab PSU</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#goals">Goals</a></li>
+                <li><a href="index.html#members">Team</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="code.html">Papers + Code</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Applied Machine Learning</h1>
+            <p class="section-subtitle">
+                Selected applied ML projects from the AI Lab at Portland State University,
+                adapted from the Applied ML page on Google Sites.
+                For the canonical list, see
+                <a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">
+                    Applied ML (Google Sites)
+                </a>.
+            </p>
+
+            <!-- 1) GeoAI for Drainage Structure Detection & Hydrologic Connectivity -->
+            <section class="section">
+                <h2 class="section-title">1) GeoAI for Drainage Structure Detection &amp; Hydrologic Connectivity</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Deep Learning–Based Detection and Classification of Drainage Crossings (Bridges/Culverts) from High-Resolution LiDAR DEMs</h3>
+                        <p>
+                            Hydrologic connectivity analysis using LiDAR-derived DEMs is often disrupted by “digital dams”
+                            (e.g., roads, bridges) that create virtual flow barriers. In this project, we develop GeoAI
+                            pipelines that use high-resolution terrain signatures (and optional GIS/imagery features) to
+                            detect and classify drainage structures such as bridges, culverts, and drainage crossings. We
+                            evaluate multiple deep learning architectures across both classification (e.g., Siamese networks,
+                            CapsNets, GCNs) and object detection (e.g., Faster R-CNN, DETR/DINO, YOLO) to identify these
+                            structures reliably in small-to-moderate datasets, enabling more accurate hydrographic mapping
+                            and improved connectivity modeling.
+                        </p>
+
+                        <p><strong>Tags</strong>: Applied Machine Learning, GeoAI, Remote Sensing, LiDAR DEM, Hydrologic Connectivity, Object Detection, CNNs, GIS</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Sourav Bhadra, Ruopu Li, Di Wu, Guangxing Wang, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Assessing the impacts of anthropogenic drainage structures on hydrologic connectivity using high-resolution digital elevation models</a>."
+                                Transactions in GIS, 25(5):2596–2611, 2021.
+                            </li>
+                            <li>
+                                Michael Edidem, Ruopu Li, Guangxing Wang, Banafsheh Rekabdar, and Bill Xu.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Classification of drainage crossings based on advanced deep learning models and high-resolution digital elevation models</a>."
+                                In AGU Fall Meeting Abstracts, volume 2024, pages GC23A–023, 2024.
+                            </li>
+                            <li>
+                                Michael Edidem, Ruopu Li, Di Wu, Banafsheh Rekabdar, and Guangxing Wang.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">GeoAI-based drainage crossing detection for elevation-derived hydrographic mapping</a>."
+                                Environmental Modelling &amp; Software, 106338, 2025.
+                            </li>
+                            <li>
+                                Michael Edidem, Bill Xu, Ruopu Li, Di Wu, Banafsheh Rekabdar, and Guangxing Wang.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Deep learning classification of drainage crossings based on high-resolution DEM-derived geomorphological information</a>."
+                                Frontiers in Artificial Intelligence, 8:1561281, 2025.
+                            </li>
+                            <li>
+                                Shayan Jalalipour, Sriharshitha Ayyalasomayjula, Hashem Damrah, Junfan Lin,
+                                Banafsheh Rekabdar, and Ruopu Li.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Deep learning-based spatial detection of drainage structures using advanced object detection methods</a>."
+                                In 2023 Fifth International Conference on Transdisciplinary AI (TransAI), pages 1–10. IEEE, 2023.
+                            </li>
+                            <li>
+                                Ruopu Li, Di Wu, Sourav Bhadra, Banafsheh Rekabdar, and Guangxing Wang.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Enhancing drainage delineation using high-resolution terrain data model and geospatial artificial intelligence</a>."
+                                In AGU Fall Meeting Abstracts, volume 2020, pages H174–05, 2020.
+                            </li>
+                            <li>
+                                Ruopu Li, Di Wu, Banafsheh Rekabdar, and Guangxing Wang.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Evaluating lidar-based elevation-derived hydrography in low-lying agricultural landscapes</a>."
+                                In AGU Fall Meeting Abstracts, volume 2022, pages H55K–0708, 2022.
+                            </li>
+                            <li>
+                                Sameerah Talafha, Di Wu, Banafsheh Rekabdar, Ruopu Li, and Guangxing Wang.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Classification and feature extraction for hydraulic structures data using advanced CNN architectures</a>."
+                                In 2021 Third International Conference on Transdisciplinary AI (TransAI), pages 137–146. IEEE, 2021.
+                            </li>
+                            <li>
+                                Di Wu, Ruopu Li, Banafsheh Rekabdar, Claire Talbert, Michael Edidem, and Guangxing Wang.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Classification of drainage crossings on high-resolution digital elevation models: A deep learning approach</a>."
+                                GIScience &amp; Remote Sensing, 60(1):2230706, 2023.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2) Machine Learning for Multispectral Pedestrian Detection -->
+            <section class="section section-alt">
+                <h2 class="section-title">2) Machine Learning for Multispectral Pedestrian Detection (Nighttime Vision + Bias Analysis)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Multispectral + Nighttime Pedestrian Detection with Feature Fusion, Domain Translation, and Bias Auditing</h3>
+                        <p>
+                            Pedestrian detection performance often degrades at night and can be uneven across conditions
+                            (illumination, backgrounds, and demographic/appearance factors). In this project, we build robust
+                            pedestrian detection pipelines that combine multispectral sensing with learned feature fusion
+                            (e.g., dual-attention fusion) to improve detection under low visibility. We also boost nighttime
+                            performance using unpaired image-to-image translation (night-to-day) to reduce the domain gap.
+                            In addition, we evaluate modern detection backbones—including YOLO-style one-stage detectors and
+                            transformer-based detectors (DETR-family)—to understand robustness trade-offs across illumination
+                            settings and to better characterize bias and failure modes in real-world deployment.
+                        </p>
+
+                        <p><strong>Tags</strong>: Applied Machine Learning, Pedestrian Detection, Nighttime Vision, Domain Adaptation, Transformers (DETR), YOLO, Fairness/Bias</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Althoupety, Afnan, Li-Yun Wang, Wu-Chi Feng, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">DAFF: dual attentive feature fusion for multispectral pedestrian detection</a>."
+                                In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 2997–3006, 2024.
+                            </li>
+                            <li>
+                                Althoupety, Afnan, Li-Yun Wang, Wu-Chi Feng, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Illuminating the Bias in Pedestrian Detection</a>."
+                                In 2023 IEEE International Symposium on Multimedia (ISM), pp. 103–107. IEEE, 2023.
+                            </li>
+                            <li>
+                                Althoupety, Afnan, Li-Yun Wang, Wu-Chi Feng, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Night-to-Day: Unpaired Image-to-Image Translation for Nighttime Pedestrian Detection</a>."
+                                In ECAI 2024, pp. 626–633. IOS Press, 2024.
+                            </li>
+                            <li>
+                                Izadkhah, Saba, Andrew Wagner, Banafsheh Rekabdar, Joseph Broach, and Sirisha Kothuri.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Enhancing Bicyclist Volume Estimation with Data Fusion and Deep Learning Techniques</a>."
+                                In 2024 Conference on AI, Science, Engineering, and Technology (AIxSET), pp. 35–44. IEEE, 2024.
+                            </li>
+                            <li>
+                                Kothuri, Sirisha, Banafsheh Rekabdar, Joseph Broach, Saba Izadkhah, and Andrew Wagner.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Improving the Accuracy and Precision of Bicycle Volume Estimates using Advanced Machine Learning Approaches</a>."
+                                NITC-TT-1614, 2024.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3) Machine Learning for Urban Mobility Sensing and Bicycle Analytics -->
+            <section class="section">
+                <h2 class="section-title">3) Machine Learning for Urban Mobility Sensing and Bicycle Analytics</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Cyclist Detection and Bicycle Volume Estimation using Deep Learning and Data Fusion</h3>
+                        <p>
+                            This project studies machine learning approaches for understanding urban bicycle activity through
+                            data-driven volume estimation and vision-based cyclist detection. We develop deep learning models
+                            (DNNs, LSTMs) that fuse traditional count data, crowdsourced mobility data (e.g., Strava), and
+                            static environmental features to improve the accuracy and transferability of bicyclist volume
+                            estimates. We then extend this work using transformer-based time-series attention models combined
+                            with feature selection (correlation analysis and Random Forest importance), showing further gains
+                            in robustness, generalization, and transferability. In parallel, we fine-tune state-of-the-art
+                            object detectors (YOLOv8/YOLOv11, Faster R-CNN) on cyclist-enriched datasets constructed from
+                            diverse real-world traffic videos, addressing challenges such as occlusion, compound rider–bicycle
+                            semantics, and class imbalance. Together, these efforts support reliable bicycle demand estimation
+                            and perception for urban transportation planning and safety analysis.
+                        </p>
+
+                        <p><strong>Tags</strong>: Applied Machine Learning, Urban Mobility, Cyclist Detection, Object Detection, Data Fusion, Time-Series Modeling, Transformers, Transportation Analytics</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Izadkhah, Saba, Andrew Wagner, Banafsheh Rekabdar, Joseph Broach, and Sirisha Kothuri.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Enhancing Bicyclist Volume Estimation with Data Fusion and Deep Learning Techniques</a>."
+                                In 2024 Conference on AI, Science, Engineering, and Technology (AIxSET), pp. 35–44. IEEE, 2024.
+                            </li>
+                            <li>
+                                Kothuri, Sirisha, Banafsheh Rekabdar, Joseph Broach, Saba Izadkhah, and Andrew Wagner.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Improving the Accuracy and Precision of Bicycle Volume Estimates using Advanced Machine Learning Approaches</a>."
+                                NITC-TT-1614, 2024.
+                            </li>
+                            <li>
+                                Izadkhah, Saba, B. Rekabdar, A. Wagner, J. Broach, and S. Kothuri.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">A Time Series Transformer Attention Model for Enhancing Bicyclist Volume Estimation Using Data Fusion and Feature Selection Techniques</a>."
+                                In 2025 19th International Conference on Semantic Computing (ICSC), pp. 60–67.
+                            </li>
+                            <li>
+                                Izadkhah, Saba, Manikanta Kotthapalli, Banafsheh Rekabdar, Andrew Wagner, Sirisha Kothuri, and Nathan McNeil.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/applied-ml?authuser=0" target="_blank" rel="noopener">Cyclist Detection in Urban Traffic Using Fine-Tuned YOLO Models and Diverse Real-World Video Data</a>."
+                                2026 20th International Conference on Semantic Computing (ICSC), 2026.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4) ML for Understanding Quality of Life in Autistic Adults -->
+            <section class="section section-alt">
+                <h2 class="section-title">4) ML for Understanding Quality of Life in Autistic Adults (NIH R01 Collaboration)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>ML-Based Discovery of QoL Drivers and Subgroups in a Diverse Autistic Adult Cohort</h3>
+                        <p>
+                            Autistic adults experience major health disparities and lower quality of life (QoL) than the
+                            general population. In collaboration with Dr. Nicolaidis’ NIH-funded R01 cohort study (AASPIRE),
+                            this project applies machine learning to answer questions that traditional health services methods
+                            struggle to address—namely, how complex interactions among demographics, disability
+                            characteristics, health and social outcomes, and service use jointly shape overall QoL, and how
+                            these drivers differ across subgroups of autistic adults.
+                        </p>
+                        <p>
+                            The work has two aims: (1) use ML-based clustering on baseline survey data to identify meaningful
+                            subgroups of autistic adults, and (2) use flexible ML models to uncover nonlinear and
+                            subgroup-specific relationships among potential QoL drivers. A key component is integration with
+                            AASPIRE’s community-based participatory research (CBPR) infrastructure to refine model design,
+                            interpret findings, and ground results in real-world context. The goal is to generate actionable
+                            evidence that can inform policies and interventions to improve QoL and health outcomes across the
+                            autism spectrum.
+                        </p>
+
+                        <p><strong>Tags</strong>: Applied Machine Learning, Healthcare ML, Clustering, Quality of Life (QoL), Community-Based Participatory Research (CBPR)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Lab</h4>
+                    <p>Portland State University</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research</a></li>
+                        <li><a href="index.html#members">Team</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="code.html">Papers + Code</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Lab, Portland State University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
