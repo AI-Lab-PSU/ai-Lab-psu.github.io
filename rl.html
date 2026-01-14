@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reinforcement Learning projects at the AI Lab, Portland State University">
+    <title>Reinforcement Learning Projects - AI Lab PSU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html#home">AI Lab PSU</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#goals">Goals</a></li>
+                <li><a href="index.html#members">Team</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="code.html">Papers + Code</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Reinforcement Learning Projects</h1>
+            <p class="section-subtitle">
+                Selected reinforcement learning projects from the AI Lab at Portland State University,
+                adapted from the RL projects page on Google Sites.
+                For the canonical list, see
+                <a href="https://sites.google.com/site/banafsheh1rekabdar/rl?authuser=0" target="_blank" rel="noopener">
+                    Reinforcement Learning Projects (Google Sites)
+                </a>.
+            </p>
+
+            <!-- 1) Model-Based RL (World Models / Hierarchical Latent Dynamics) -->
+            <section class="section">
+                <h2 class="section-title">1) Model-Based RL (World Models / Hierarchical Latent Dynamics)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Comparative Study of World Models, NVAE-Based Hierarchical Models, and NoisyNet-Augmented Models in CarRacing-V2</h3>
+                        <p>
+                            In continuous-control settings like CarRacing-V2, RL must solve both world modeling and exploration.
+                            This project compares (i) standard World Models, (ii) NVAE-based hierarchical world models, and
+                            (iii) NoisyNet-augmented exploration, highlighting trade-offs in reward performance, training
+                            stability, and compute. The results clarify when to prioritize stronger representations versus
+                            exploration mechanisms.
+                        </p>
+
+                        <h3>Deep Hierarchical Variational Autoencoders for World Models in Reinforcement Learning</h3>
+                        <p>
+                            This project explores NVAE-style hierarchical VAEs as the world model component in model-based RL,
+                            improving representation quality and latent dynamics so agents can learn more efficiently with
+                            fewer real environment interactions.
+                        </p>
+
+                        <p><strong>Tags</strong>: Model-Based RL, World Models, VAE, Hierarchical VAE (NVAE), Exploration, OpenAI Gym</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Ayyalasomayajula, Sriharshitha, Banafsheh Rekabdar, and Christos Mousas.
+                                "Deep hierarchical variational autoencoders for world models in reinforcement learning."
+                                In 2023 Fifth International Conference on Transdisciplinary AI (TransAI), pp. 128–134. IEEE, 2023.
+                            </li>
+                            <li>
+                                Jayashankar, Vidyavarshini Holenarasipur, and Banafsheh Rekabdar.
+                                "Comparative study of world models, NVAE-based hierarchical models, and NoisyNet-augmented models in CarRacing-V2."
+                                In ICLR 2025 Workshop on World Models: Understanding, Modelling and Scaling.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2) Robust & Secure RL (Multimodal RL + Adversarial Attacks/Defenses) -->
+            <section class="section section-alt">
+                <h2 class="section-title">2) Robust &amp; Secure RL (Multimodal RL + Adversarial Attacks/Defenses)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Robust Multimodal Reinforcement Learning</h3>
+                        <p>
+                            Multimodal agents can solve harder problems by fusing inputs like vision and state features,
+                            but they introduce new security risks. This project builds an open-source testbed to generate
+                            datasets and evaluate adversarial attacks and defenses on multimodal RL agents, uncovering
+                            cross-modal effects and showing that attack success varies strongly by modality and defense choice.
+                        </p>
+
+                        <p><strong>Tags</strong>: Robust RL, Multimodal RL, PPO, Diffusion Models</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Shayan Jalalipour, Danielle Justo, and Banafsheh Rekabdar.
+                                <em>Understanding adversarial vulnerabilities and emergent patterns in multimodal RL.</em>
+                                Accepted in Proceedings of the IEEE International Conference on Semantic Computing (ICSC), 2025. (Code: GitHub)
+                            </li>
+                            <li>
+                                Shayan Jalalipour, Danielle Justo, and Banafsheh Rekabdar.
+                                <em>Understanding adversarial vulnerabilities and emergent patterns in multimodal RL.</em>
+                                NeurIPS 2025 UniReps workshop (blog post), 2025. (Code: GitHub)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3) In-Context Reinforcement Learning (Online Adaptation with Long-Context Sequence Models) -->
+            <section class="section">
+                <h2 class="section-title">3) In-Context Reinforcement Learning (Online Adaptation with Long-Context Sequence Models)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Online Decision Mamba</h3>
+                        <p>
+                            We developed Online Decision Mamba (ODM), an online in-context RL architecture that replaces
+                            attention in Online Decision Transformers with the Mamba module for improved long-context
+                            modeling. ODM fine-tunes offline-trained policies online and was evaluated on MuJoCo and Atari,
+                            where it matched or exceeded strong baselines—especially when datasets lacked expert
+                            demonstrations. We also analyzed context-length sensitivity and showed how delta-parameter
+                            initialization can mitigate degradation.
+                        </p>
+
+                        <p><strong>Tags</strong>: In-Context RL, Online Adaptation, Offline RL, MuJoCo, Atari, Sequence Models</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Trenton Ruf and Banafsheh Rekabdar. <em>Online Decision Mamba.</em>
+                                In Proceedings of the IEEE International Conference on Cognitive Machine Intelligence (CogMI), 2025.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4) Efficient RL Representations (Beyond Pixels) -->
+            <section class="section section-alt">
+                <h2 class="section-title">4) Efficient RL Representations (Beyond Pixels)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>RAM-Based Deep Reinforcement Learning for Atari (Deep RAM Network)</h3>
+                        <p>
+                            Most Atari deep RL relies on stacked pixel frames, which are high-dimensional and model-heavy.
+                            This project revisits Atari RAM (128 bytes) and develops a RAM-only agent (Deep RAM Network, DRN)
+                            using DQN-style training. DRN achieved competitive performance and outperformed pixel-based DQN
+                            in 9/14 games in our experiments, using ~50× fewer parameters and a 220× smaller input size.
+                            We also explored a hybrid RAM+pixel agent that exceeded DQN in 11/14 games with minimal overhead.
+                        </p>
+
+                        <p><strong>Tags</strong>: Deep RL, DQN, Atari, Efficient Representations, RAM</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Wagner, Andrew J. <em>Digging Deeper with Deep RAM Networks.</em>
+                                Master's thesis, Portland State University, 2025.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5) RL for Time-Series Anomaly Detection -->
+            <section class="section">
+                <h2 class="section-title">5) RL for Time-Series Anomaly Detection (LLM Reward Shaping + VAE Signals + Active Learning)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Dynamic Reward Scaling for Multivariate Time Series Anomaly Detection: A VAE-Enhanced RL Approach</h3>
+                        <p>
+                            This work combines RL with a VAE reconstruction signal to provide an unsupervised anomaly cue and
+                            supports dynamic reward scaling, improving learning when labeled anomalies are scarce.
+                        </p>
+
+                        <h3>DRTA: Dynamic Reward Scaling for Reinforcement Learning in Time Series Anomaly Detection</h3>
+                        <p>
+                            A dynamic reward-scaling framework designed to stabilize RL training and improve sample efficiency
+                            for time-series anomaly detection under limited labels.
+                        </p>
+
+                        <h3>LLM-Enhanced Reinforcement Learning for Time Series Anomaly Detection</h3>
+                        <p>
+                            A unified framework where LLM-derived semantic reward potentials guide exploration, while VAE
+                            reconstruction and active learning (uncertainty sampling + label propagation) improve detection
+                            performance under small labeling budgets.
+                        </p>
+
+                        <h3>Anomaly Detection in Time Series Data Using Reinforcement Learning, Variational Autoencoder, and Active Learning</h3>
+                        <p>
+                            An earlier framework integrating RL, VAE signals, and active learning to detect anomalies with
+                            minimal labeled data, leveraging sequential modeling and uncertainty-driven sample selection.
+                        </p>
+
+                        <p><strong>Tags</strong>: Model-Free RL, Anomaly Detection, VAE, LLMs, Reward Shaping, Active Learning, DQN</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Golchin, Bahareh, and Banafsheh Rekabdar.
+                                “Dynamic Reward Scaling for Multivariate Time Series Anomaly Detection:
+                                A VAE-Enhanced Reinforcement Learning Approach.”
+                                In Proceedings of the IEEE International Conference on Cognitive Machine Intelligence (CogMI), 2025.
+                            </li>
+                            <li>
+                                Golchin, Bahareh, Banafsheh Rekabdar, and Ke Liu.
+                                “DRTA: Dynamic Reward Scaling for Reinforcement Learning in Time Series Anomaly Detection.”
+                                In Proceedings of the AI, Science, Engineering, and Technology Conference (AIxSET), 1–8, 2025.
+                            </li>
+                            <li>
+                                Golchin, Bahareh, and Banafsheh Rekabdar.
+                                “Anomaly Detection in Time Series Data Using Reinforcement Learning, Variational Autoencoder, and Active Learning.”
+                                In Proceedings of the AI, Science, Engineering, and Technology Conference (AIxSET), 1–8, September 2024.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6) RL for Recommender Systems -->
+            <section class="section section-alt">
+                <h2 class="section-title">6) RL for Recommender Systems (Group Recommendation + Attention)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Group Recommendation via Deep Reinforcement Learning</h3>
+                        <p>
+                            We introduced a deep RL-based group recommendation system that adapts its aggregation strategy to
+                            group size and data modality. For smaller groups, it uses weighted preference averaging to preserve
+                            individual influence, while for larger groups it uses multi-head attention to capture diverse
+                            member preferences and dynamic member–item interactions. We further extend this framework by
+                            integrating multi-modal signals, including visual, textual, and behavioral features, into an
+                            actor–critic RL formulation. Evaluations on MovieLens-style datasets show consistent improvements
+                            in ranking and retrieval metrics over strong baselines.
+                        </p>
+
+                        <p><strong>Tags</strong>: Model-Free RL, Deep RL, Recommender Systems, Multi-Head Attention, Group Recommendation, Multi-Modal Recommendation</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Izadkhah, Saba, and Banafsheh Rekabdar.
+                                “Multi-modal group recommendation with visual and textual fusion via deep reinforcement learning.”
+                                In Proceedings of the AIxSET Conference, September 2025.
+                            </li>
+                            <li>
+                                Izadkhah, Saba, and Banafsheh Rekabdar.
+                                "Deep Reinforcement Learning Based Group Recommendation System with Multi-Head Attention Mechanism."
+                                In 2023 Fifth International Conference on Transdisciplinary AI (TransAI), pp. 120–127. IEEE, 2023.
+                            </li>
+                            <li>
+                                Izadkhah, Saba, and Banafsheh Rekabdar.
+                                "Enhanced Deep Reinforcement Learning based Group Recommendation System with Multi-head Attention for Varied Group Sizes."
+                                In ESANN, 2024.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7) Uncertainty-Aware Decision-Making (Planning) -->
+            <section class="section">
+                <h2 class="section-title">7) Uncertainty-Aware Decision-Making (Planning)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Uncertainty Measured Markov Decision Process in Dynamic Environments (ICRA 2020)</h3>
+                        <p>
+                            Robot path planning becomes challenging in dynamic environments with visual occlusions and
+                            moving targets. This work proposes a predictive planning approach that explicitly measures
+                            uncertainty during motion planning using a variant of subjective logic combined with an MDP
+                            formulation. The model outputs belief/disbelief/uncertainty over candidate trajectories and
+                            selects the best planning strategy for target tracking and pursuit–evasion scenarios.
+                        </p>
+
+                        <p><strong>Tags</strong>: MDP, POMDP, Uncertainty Quantification, Robotics, Motion Planning, Decision-Making</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Dutta, Sourav, Banafsheh Rekabdar, and Chinwe Ekenna.
+                                "Uncertainty measured Markov decision process in dynamic environments."
+                                In 2020 IEEE International Conference on Robotics and Automation (ICRA), pp. 962–968. IEEE, 2020.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Lab</h4>
+                    <p>Portland State University</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research</a></li>
+                        <li><a href="index.html#members">Team</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="code.html">Papers + Code</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Lab, Portland State University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
