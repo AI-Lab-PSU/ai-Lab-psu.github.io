@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generative AI projects at the AI Lab, Portland State University">
+    <title>Generative AI Projects - AI Lab PSU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html#home">AI Lab PSU</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#goals">Goals</a></li>
+                <li><a href="index.html#members">Team</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="code.html">Papers + Code</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Generative AI</h1>
+            <p class="section-subtitle">
+                Selected generative AI projects from the AI Lab at Portland State University,
+                adapted from the Generative AI page on Google Sites.
+                For the canonical list, see
+                <a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">
+                    Generative AI (Google Sites)
+                </a>.
+            </p>
+
+            <!-- 1) VAEs for Decision-Making (World Models / Model-Based RL) -->
+            <section class="section">
+                <h2 class="section-title">1) VAEs for Decision-Making (World Models / Model-Based RL)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Deep Hierarchical Variational Autoencoders for World Models in Reinforcement Learning</h3>
+                        <p>
+                            A VAE-based “world model” learns a compact latent representation of the environment so an agent
+                            can train efficiently with fewer real interactions. This work explores NVAE-style hierarchical
+                            VAEs to improve representation quality for complex visual environments.
+                        </p>
+
+                        <h3>Comparative Study of World Models, NVAE-Based Hierarchical Models, and NoisyNet-Augmented Models in CarRacing-V2 (ICLR 2025 workshop paper)</h3>
+                        <p>
+                            An experimental comparison of (i) standard World Models, (ii) NVAE-based hierarchical world models,
+                            and (iii) NoisyNet-augmented exploration. Highlights trade-offs among reward performance,
+                            stability, and compute, showing how stronger latent models and exploration noise affect learning.
+                        </p>
+
+                        <p><strong>Tags</strong>: VAE, Hierarchical VAE (NVAE), Model-Based RL, Exploration</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Ayyalasomayajula, Sriharshitha, Banafsheh Rekabdar, and Christos Mousas.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Deep hierarchical variational autoencoders for world models in reinforcement learning</a>."
+                                In 2023 Fifth International Conference on Transdisciplinary AI (TransAI), pp. 128–134. IEEE, 2023.
+                            </li>
+                            <li>
+                                Jayashankar, Vidyavarshini Holenarasipur, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Comparative study of world models, NVAE-based hierarchical models, and NoisyNet-augmented models in CarRacing-V2</a>."
+                                In ICLR 2025 Workshop on World Models: Understanding, Modelling and Scaling.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2) VAEs for Time-Series Anomaly Detection (RL + Active Learning) -->
+            <section class="section section-alt">
+                <h2 class="section-title">2) VAEs for Time-Series Anomaly Detection (RL + Active Learning)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Anomaly Detection in Time Series Data Using Reinforcement Learning, Variational Autoencoder, and Active Learning</h3>
+                        <p>
+                            A unified approach combining DRL + VAE + active learning to detect anomalies with minimal labeled
+                            data. Uses sequential modeling (LSTM) and leverages VAE reconstruction behavior as part of the
+                            anomaly signal.
+                        </p>
+
+                        <p><strong>Tags</strong>: VAE, Anomaly Detection, RL, Active Learning, Time Series</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Golchin, Bahareh, and Banafsheh Rekabdar.
+                                “<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Dynamic Reward Scaling for Multivariate Time Series Anomaly Detection: A VAE-Enhanced Reinforcement Learning Approach</a>.”
+                                In Proceedings of the IEEE International Conference on Cognitive Machine Intelligence (CogMI), 2025.
+                            </li>
+                            <li>
+                                Golchin, Bahareh, Banafsheh Rekabdar, and Ke Liu.
+                                “<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">DRTA: Dynamic Reward Scaling for Reinforcement Learning in Time Series Anomaly Detection</a>.”
+                                In Proceedings of the AI, Science, Engineering, and Technology Conference (AIxSET), 1–8, 2025.
+                            </li>
+                            <li>
+                                Golchin, Bahareh, and Banafsheh Rekabdar.
+                                “<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Anomaly Detection in Time Series Data Using Reinforcement Learning, Variational Autoencoder, and Active Learning</a>.”
+                                In Proceedings of the AI, Science, Engineering, and Technology Conference (AIxSET), 1–8, September 2024.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3) LLMs for Feature Engineering & Representation Learning -->
+            <section class="section">
+                <h2 class="section-title">3) LLMs for Feature Engineering &amp; Representation Learning</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Dynamic and Adaptive Feature Generation with LLMs</h3>
+                        <p>
+                            Feature generation transforms raw data into an optimized feature space for downstream modeling,
+                            but many automated methods lack explainability, generality, and flexibility. This project
+                            introduces an LLM-driven approach that uses feature-generating prompts to produce dynamic,
+                            adaptive features with improved interpretability. The method is designed to generalize across
+                            data types and tasks, and experiments show consistent gains over prior automated feature
+                            engineering baselines.
+                        </p>
+
+                        <p><strong>Tags</strong>: Large Language Models (LLMs), Automated Feature Engineering, Feature Generation, Representation Learning, Interpretability</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Zhang, Xinhao, Jinghan Zhang, Banafsheh Rekabdar, Yuanchun Zhou, Pengfei Wang, and Kunpeng Liu.
+                                “<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Dynamic and Adaptive Feature Generation with LLM</a>.”
+                                AAAI, 2024.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4) LLMs + RL for Time-Series Anomaly Detection (Semantic Reward Shaping) -->
+            <section class="section section-alt">
+                <h2 class="section-title">4) LLMs + RL for Time-Series Anomaly Detection (Semantic Reward Shaping)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>LLM-Enhanced Reinforcement Learning for Time Series Anomaly Detection</h3>
+                        <p>
+                            A framework that integrates LLM-based potential functions for reward shaping with RL, plus
+                            VAE-enhanced dynamic reward scaling and active learning with label propagation. The RL agent
+                            uses LLM-derived semantic rewards for exploration while VAE reconstruction error contributes
+                            unsupervised anomaly signals; evaluated on benchmarks including Yahoo-A1 and SMD.
+                        </p>
+
+                        <h3>Semantic Reward Shaping: LLMs in Reinforcement Learning for Time Series Anomaly Detection</h3>
+                        <p>
+                            A submission-friendly version of the same core idea: LLMs provide semantic reward shaping, and
+                            VAEs provide an unsupervised anomaly component, improving learning under limited labels.
+                        </p>
+
+                        <p><strong>Tags</strong>: LLMs, Reward Shaping, RL, VAE, Time Series</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Golchin, Bahareh, Banafsheh Rekabdar, and Danielle Justo.
+                                “<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">LLM-Enhanced Reinforcement Learning for Time Series Anomaly Detection</a>.”
+                                Accepted for publication in Proceedings of the IEEE International Conference on Semantic Computing (ICSC), 2025.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5) Robustness & Security with VAEs (Adversarial Defense) -->
+            <section class="section">
+                <h2 class="section-title">5) Robustness &amp; Security with VAEs (Adversarial Defense)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Noisy-Defense Variational Auto-Encoder (ND-VAE): An Adversarial Defense Framework to Eliminate Adversarial Attacks</h3>
+                        <p>
+                            A defense mechanism that combines strengths of NVAE and Defense-VAE, trained with noisy images
+                            to remove adversarial perturbations while preserving details. Evaluated on MNIST and
+                            Fashion-MNIST, including strong performance in generalizing across attacks.
+                        </p>
+
+                        <h3>Biologically Inspired Variational Auto-Encoders for Adversarial Robustness</h3>
+                        <p>
+                            Introduces a biologically inspired “sleep phase” in a VAE-based defense (Defense-VAE-Sleep) to
+                            improve generalization and robustness. Experiments include datasets like CelebA, MNIST, and
+                            Fashion-MNIST.
+                        </p>
+
+                        <p><strong>Tags</strong>: VAE, Robustness, Adversarial Defense, Purification</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Jalalipour, Shayan, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Noisy-defense variational auto-encoder (ND-VAE): An adversarial defense framework to eliminate adversarial attacks</a>."
+                                In 2023 Fifth International Conference on Transdisciplinary AI (TransAI), pp. 50–57. IEEE, 2023. Github
+                            </li>
+                            <li>
+                                Talafha, Sameerah, Banafsheh Rekabdar, Christos Mousas, and Chinwe Ekenna.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Biologically Inspired Variational Auto-Encoders for Adversarial Robustness</a>."
+                                In The International Conference on Deep Learning, Big Data and Blockchain, pp. 79–93. Cham: Springer International Publishing, 2022.
+                            </li>
+                            <li>
+                                Talafha, Sameerah, Banafsheh Rekabdar, Christos Mousas, and Chinwe Ekenna.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Biologically inspired sleep algorithm for variational auto-encoders</a>."
+                                In International Symposium on Visual Computing, pp. 54–67. Cham: Springer International Publishing, 2020.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6) GANs for Robustness (NLP / Low-Resource Languages) -->
+            <section class="section section-alt">
+                <h2 class="section-title">6) GANs for Robustness (NLP / Low-Resource Languages)</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>GAN-based Defense Mechanism against Word-level Attacks for Arabic Transformer-based Model</h3>
+                        <p>
+                            A GAN-based (InfoGAN-style) defense strategy designed to improve robustness of transformer models
+                            for Arabic against word-substitution attacks, using generated perturbations and discrimination to
+                            improve resilience.
+                        </p>
+
+                        <p><strong>Tags</strong>: GAN, Robustness, NLP Security, Low-Resource NLP, Transformers</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Alshalan, Hanin, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">GAN-Based Defense Mechanism Against Word-Level Attacks for Arabic Transformer-Based Model</a>."
+                                In 2024 International Conference on Electrical, Computer and Energy Technologies (ICECET), pp. 1–7. IEEE, 2024.
+                            </li>
+                            <li>
+                                Alshalan, Hanin, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Attacking a transformer-based models for arabic language as low resources language (LRL) using word-substitution methods</a>."
+                                In 2023 Fifth International Conference on Transdisciplinary AI (TransAI), pp. 95–101. IEEE, 2023.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7) Hybrid Generative Models (CVAE + GAN) for Robotics / Planning -->
+            <section class="section">
+                <h2 class="section-title">7) Hybrid Generative Models (CVAE + GAN) for Robotics / Planning</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Sample Generation with CVAE + GAN</h3>
+                        <p>
+                            Explores combining a Conditional VAE (CVAE) and GAN to model complex, high-dimensional
+                            distributions relevant to planning/robotics—aiming to generate feasible samples conditioned on
+                            task constraints.
+                        </p>
+
+                        <p><strong>Tags</strong>: CVAE, GAN, Robotics, Generative Modeling</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Tran, Tuan, Sourav Dutta, Banafsheh Rekabdar, and Chinwe Ekenna.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">Transformer based approach for sample generation in motion planning</a>."
+                                In 2023 IEEE 19th International Conference on Automation Science and Engineering (CASE), pp. 1–7. IEEE, 2023.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8) Diffusion Models -->
+            <section class="section section-alt">
+                <h2 class="section-title">8) Diffusion Models</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>OSA-Diff: An Origin Sampling Based Adversarial Attack Using Diffusion Models</h3>
+                        <p>
+                            This project explores how diffusion models (DDPMs) can be used not only for generation/denoising,
+                            but also to create end-to-end adversarial perturbations. The core idea is an
+                            origin-sampling–based reconstruction process that injects carefully designed perturbations during
+                            the denoising trajectory, producing high-success adversarial examples that can remain visually
+                            subtle. The method is designed to be more computationally efficient than typical diffusion
+                            training while still converging to high-quality outputs.
+                        </p>
+
+                        <p><strong>Tags</strong>: Diffusion Models, DDPM, Adversarial Attacks, Security, Robustness</p>
+
+                        <ul class="publication-list">
+                            <li>
+                                Jalalipour, Shayan, and Banafsheh Rekabdar.
+                                "<a href="https://sites.google.com/site/banafsheh1rekabdar/generative-ai?authuser=0" target="_blank" rel="noopener">OSA-Diff: An Origin Sampling Based Adversarial Attack Using Diffusion Models</a>."
+                                In 2025 19th International Conference on Semantic Computing (ICSC), pp. 20–27. IEEE Computer Society, 2025.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Lab</h4>
+                    <p>Portland State University</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research</a></li>
+                        <li><a href="index.html#members">Team</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="code.html">Papers + Code</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Lab, Portland State University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
