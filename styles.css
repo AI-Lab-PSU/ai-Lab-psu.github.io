@@ -108,13 +108,13 @@ body {
 }
 
 .profile-photo{
-  width: 220px;
-  height: 220px;
-  object-fit: cover;          /* fills the box */
-  object-position: center;    /* center the face */
-  border-radius: 50%;         /* optional: circle */
+  width: 100%;
+  max-width: 260px; /* optional limit */
+  height: auto;
   display: block;
 }
+
+
 .nav-toggle span {
     width: 25px;
     height: 3px;
