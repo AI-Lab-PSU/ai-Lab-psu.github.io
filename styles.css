@@ -369,7 +369,7 @@ body {
 }
 
 .member-image {
-    width: 110px;
+    width: 140px;
     height: 110px;
     background: linear-gradient(135deg, #6D8D24 0%, #213921 100%);
     display: flex;
